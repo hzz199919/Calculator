@@ -22,6 +22,36 @@ import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
 import javax.swing.UIManager;
 
+    public String getResult(String str){
+        Double result=0.0;
+        String []need_to_do=str.split(" ");
+        for(int i=0;i<need_to_do.length;i++){
+            switch (need_to_do[i]){
+                case "+":
+                    result=result+(Double.parseDouble(need_to_do[i-1])+Double.parseDouble(need_to_do[i+1]));
+                    break;
+                case "-":
+                    result=result+(Double.parseDouble(need_to_do[i-1])-Double.parseDouble(need_to_do[i+1]));
+                    break;
+                case "*":
+                    result=result+(Double.parseDouble(need_to_do[i-1])*Double.parseDouble(need_to_do[i+1]));
+                    break;
+                case "/":
+                    result=result+(Double.parseDouble(need_to_do[i-1])/Double.parseDouble(need_to_do[i+1]));
+                    break;
+                case "求根":
+                    result=result+(Math.sqrt(Double.parseDouble(need_to_do[i-1])));
+                    break;
+                case "取反":
+                    result=result+(-Double.parseDouble(need_to_do[i-1]));
+                    break;
+            }
+
+        }
+        return result+"";
+    }
+
+
 public class GUI {
 
 	private JFrame frame;
