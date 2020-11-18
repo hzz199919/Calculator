@@ -25,7 +25,6 @@ public class GUI {
 
 	private JFrame frame;
 	private float x,y,z;
-
 	/**
 	 * Launch the application.
 	 */
@@ -201,10 +200,7 @@ public class GUI {
 
 		JButton btnNewButton_10 = new JButton("=");
 		btnNewButton_10.setBackground(new Color(255, 255, 255));
-		panel.add(btnNewButton_10);
-		
-		
-		
+		panel.add(btnNewButton_10);		
 		
 	}
 }
