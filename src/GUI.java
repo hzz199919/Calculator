@@ -1,6 +1,18 @@
 import java.awt.Color;
 import java.awt.EventQueue;
-
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.SystemColor;
+import javax.swing.UIManager;
 import javax.swing.JFrame;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
