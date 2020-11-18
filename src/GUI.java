@@ -8,49 +8,6 @@ import javax.swing.JPanel;
 import java.awt.GridLayout;
 import java.awt.Insets;
 
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-import javax.swing.border.Border;
-import javax.swing.border.CompoundBorder;
-import javax.swing.border.EmptyBorder;
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.SystemColor;
-import javax.swing.UIManager;
-
-    public String getResult(String str){
-        Double result=0.0;
-        String []need_to_do=str.split(" ");
-        for(int i=0;i<need_to_do.length;i++){
-            switch (need_to_do[i]){
-                case "+":
-                    result=result+(Double.parseDouble(need_to_do[i-1])+Double.parseDouble(need_to_do[i+1]));
-                    break;
-                case "-":
-                    result=result+(Double.parseDouble(need_to_do[i-1])-Double.parseDouble(need_to_do[i+1]));
-                    break;
-                case "*":
-                    result=result+(Double.parseDouble(need_to_do[i-1])*Double.parseDouble(need_to_do[i+1]));
-                    break;
-                case "/":
-                    result=result+(Double.parseDouble(need_to_do[i-1])/Double.parseDouble(need_to_do[i+1]));
-                    break;
-                case "Root":
-                    result=result+(Math.sqrt(Double.parseDouble(need_to_do[i-1])));
-                    break;
-                case "qute":
-                    result=result+(-Double.parseDouble(need_to_do[i-1]));
-                    break;
-            }
-
-        }
-        return result+"";
-    }
-
 
 public class GUI {
 
