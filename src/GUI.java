@@ -39,10 +39,10 @@ import javax.swing.UIManager;
                 case "/":
                     result=result+(Double.parseDouble(need_to_do[i-1])/Double.parseDouble(need_to_do[i+1]));
                     break;
-                case "求根":
+                case "Root":
                     result=result+(Math.sqrt(Double.parseDouble(need_to_do[i-1])));
                     break;
-                case "取反":
+                case "qute":
                     result=result+(-Double.parseDouble(need_to_do[i-1]));
                     break;
             }
