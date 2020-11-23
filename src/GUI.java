@@ -180,8 +180,8 @@ public class GUI {
 		panel.add(btnNewButton_18);
 		
 		JButton btnNewButton_22 = new JButton("~");
-		panel.add(btnNewButton_22);
-		
+		panel.add(btnNewButton_22);	
+	
 		JButton btnNewButton_9 = new JButton("0");
 		btnNewButton_9.setBackground(new Color(245, 255, 250));
 		btnNewButton_9.setForeground(Color.BLACK);
